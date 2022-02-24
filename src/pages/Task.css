@@ -1,0 +1,18 @@
+.container-api {
+    text-align: center;
+}
+.title-api{
+    color: blue;
+}
+.table-task{
+    text-align: left;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.table-head{
+    color: rgb(0, 0, 192);
+    font-weight: bold;
+}
+.checkTask{
+    text-decoration: line-through;
+}
