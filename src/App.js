@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Routes as Switch } from 'react-router-dom';
-import Task from './pages/Task';
+import TaskPage from './pages/TaskPage';
 
 
 function App() {
     return(
       <Router>
         <Switch>
-          <Route path="/" element={<Task/>}/>
+          <Route path="/" element={<TaskPage/>}/>
         </Switch>
       </Router>
 

@@ -4,10 +4,20 @@
 .title-api{
     color: blue;
 }
+.title-p {
+    color: rgb(0, 0, 192);
+    font-size: 15px;
+    font-weight: bold;
+}
+.msgError{
+    color: red;
+}
 .table-task{
-    text-align: left;
     margin: 0 auto;
     border-collapse: collapse;
+}
+.table-body form{
+    margin-top: 20px;
 }
 .table-head{
     color: rgb(0, 0, 192);
@@ -15,4 +25,27 @@
 }
 .checkTask{
     text-decoration: line-through;
+}
+.all-tasks{
+    margin-top: 20px;
+}
+
+.button-change, .button-save{
+    margin-left: 5px;
+    border: 0px;
+    border-radius: 3px;
+    background: blue;
+    font-weight: bold;
+    color: aliceblue;
+}
+.button-change:hover{
+    background: rgb(138, 138, 201);
+    color: blue;
+}
+.button-change:active{
+    background: blue;
+    color: aliceblue;
+}
+.button-save:hover{
+    background: green;
 }
