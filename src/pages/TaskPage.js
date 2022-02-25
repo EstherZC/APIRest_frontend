@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import axios from 'axios';
 import './Task.css';
 import Task from './Task';
 
@@ -28,12 +27,7 @@ class TaskPage extends Component
         if(this.state.tasks.length !== 0)
         {
             tasks_Table_HTLM = this.state.tasks.map( (item) =>{
-                var isCheck = false;
-                var buttonName = 'Check';
-                if(item.status === 0){
-                    isCheck=true;
-                    buttonName = 'Uncheck';
-                }
+                var isCheck = (item.status === 0) ? true : false;
                 return this.create_Table_Row(item, isCheck);
             });
         }
@@ -41,10 +35,7 @@ class TaskPage extends Component
     }  
 
     create_Table_Row(item, isCheck){
-        var buttonName = 'Check';
-        if(isCheck){
-            buttonName = 'Uncheck';
-        }
+        var buttonName = (isCheck) ? 'Uncheck' : 'Check';
         return (<tr key={item.id}>
             <td>
            
